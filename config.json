@@ -1,0 +1,310 @@
+{
+	"app_name": "BI_DAILY_DASHBOARD",
+
+	"mail":
+	{
+		"gen":
+			{
+				"body": "Please find the attached BI Daily Dashboard file.\nThis data is based on the 'Actual Shipped Date' and aggregates TL, LTL and Intermodal loads.\n\nContact - jaideep.adusumelli@globaltranz.com in case of any discrepancy.\n\nThank you,\nBI"
+			},
+		
+		"error":
+			{
+				"body": "\nUnfortunately, there was an error with running the BI - Daily Dashboard.\nPlease, rectify it and try again."
+			}
+	},
+
+	"worksheets":
+	{
+		"AFN - Overview":
+		[
+			{
+				"table_name": "Overview - MTD",
+				"query": "1.1. Overview - AFN MTD.sql",
+				"description": "AFN's Current Month-to-date Numbers vs Previous years' Month-to-date Numbers.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Overview - YTD",
+				"query": "1.2. Overview - AFN YTD.sql",
+				"description": "AFN's Current Year-to-date Numbers vs Previous years' Year-to-date Numbers.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current Year vs Budget MoM",
+				"query": "1.3. MoM budget.sql",
+				"description": "AFN's current year's Month-over-Month performance vs Budget.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current vs Previous Year MoM",
+				"query": "1.4. MoM overall.sql",
+				"description": "AFN's current year's Month-over-Month performance vs previous year's Month-over-month performance.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+            {
+				"table_name": "Mode Breakdown - MTD",
+				"query": "1.5. Modal breakdown MTD.sql",
+				"description": "AFN's Current Month-to-date Numbers vs Previous years' Month-to-date Numbers by Modes.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Mode Breakdown - YTD",
+				"query": "1.6. Modal breakdown YTD.sql",
+				"description": "AFN's Current Year-to-date Numbers vs Previous years' Year-to-date Numbers by Modes.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"TL - Overview":
+		[
+			{
+				"table_name": "Overview - MTD",
+				"query": "2.1. Overview - TL MTD.sql",
+				"description": "AFN's Current Month-to-date Numbers vs Previous years' Month-to-date Numbers for TL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Overview - YTD",
+				"query": "2.2. Overview - TL YTD.sql",
+				"description": "AFN's Current Year-to-date Numbers vs Previous years' Year-to-date Numbers for TL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current Year vs Budget MoM",
+				"query": "2.3. MoM budget TL.sql",
+				"description": "AFN's current year's Month-over-Month performance vs Budget for TL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current vs Previous Year MoM",
+				"query": "2.4. MoM TL.sql",
+				"description": "AFN's current year's Month-over-Month performance vs previous year's Month-over-month performance for TL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Operational KPIs",
+				"query": "2.5. MoM TL OPs KPIs.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Service KPIs",
+				"query": "2.6. MoM TL Service KPIs.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Order Type Breakdown - MTD",
+				"query": "2.7. TL ordertype breakdown MTD.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Order Type Breakdown - YTD",
+				"query": "2.8. TL ordertype breakdown YTD.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"LTL - Overview":
+		[
+			{
+				"table_name": "Overview - MTD",
+				"query": "3.1. Overview - LTL MTD.sql",
+				"description": "AFN's Current Month-to-date Numbers vs Previous years' Month-to-date Numbers for LTL loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Overview - YTD",
+				"query": "3.2. Overview - LTL YTD.sql",
+				"description": "AFN's Current Year-to-date Numbers vs Previous years' Year-to-date Numbers for LTL loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current Year vs Budget MoM",
+				"query": "3.3. MoM budget LTL.sql",
+				"description": "AFN's current year's Month-over-Month performance vs Budget for LTL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current vs Previous Year MoM",
+				"query": "3.4. MoM LTL.sql",
+				"description": "AFN's current year's Month-over-Month performance vs previous year's Month-over-month performance for LTL Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Operational KPIs",
+				"query": "3.5. LTL Ops KPIs.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"Intermodal - Overview":
+		[
+			{
+				"table_name": "Overview - MTD",
+				"query": "4.1. Overview - IM MTD.sql",
+				"description": "AFN's Current Month-to-date Numbers vs Previous years' Month-to-date Numbers for Intermodal loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Overview - YTD",
+				"query": "4.2. Overview - IM YTD.sql",
+				"description": "AFN's Current Year-to-date Numbers vs Previous years' Year-to-date Numbers for Intermodal loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current Year vs Budget MoM",
+				"query": "4.3. MoM budget IM.sql",
+				"description": "AFN's current year's Month-over-Month performance vs Budget for Intermodal Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Current vs Previous Year MoM",
+				"query": "4.4. MoM IM.sql",
+				"description": "AFN's current year's Month-over-Month performance vs previous year's Month-over-month performance for Intermodal Loads.",
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"AFN - Customers MTD":
+		[
+			{
+				"table_name": "Top Performers MTD by Budget Spread",
+				"query": "5.1. cust - MTD Budget top 10.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Bottom Performers MTD by Budget Spread",
+				"query": "5.2. cust - MTD Budget bottom 10.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"AFN - Customers YTD":
+		[
+			{
+				"table_name": "Top Performers YTD by Budget Spread",
+				"query": "6.1. cust - YTD Budget top 10.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "Bottom Performers YTD by Budget Spread",
+				"query": "6.2. cust - YTD Budget bottom 10.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		],
+
+		"Budget Plan - 2019":
+		[
+			{
+				"table_name": "AFN Monthly Budget Plan - 2019",
+				"query": "7.1. Budget Monthly.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "AFN Monthly Budget Plan by Revenue Type - 2019",
+				"query": "7.2. Budget Monthly Revenue Type.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			},
+
+			{
+				"table_name": "AFN Monthly Budget Plan by Order Type - 2019",
+				"query": "7.3. Budget Monthly Order Type.sql",
+				"description": null,
+
+				"ad_hoc_module": "adhoc_processing.processing",
+				"ad_hoc_processing": "del_column"
+			}
+		]
+	}
+}
